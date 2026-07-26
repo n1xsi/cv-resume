@@ -1,6 +1,6 @@
 # cv-resume
 
-This repo is just for link sharing :godmode:.
+This repo is just for link sharing to my resume with hr :godmode:.
 
 For more info just check my [profile](https://github.com/n1xsi) :octocat:.
 
