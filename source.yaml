@@ -9,20 +9,22 @@ cv:
     - network: "GitHub"
       username: "n1xsi"
   sections:
-    Обо_мне:
-      - "Python-разработчик, увлечённый программированием со школьных лет."
-      - "Фокусируюсь на системном программировании и Backend, понимаю работу \"под капотом\" (C, ASM, Linux)."
-      - "В портфолио — коммерческая практика, боты с активной аудиторией и собственные библиотеки."
-    Образование:
-      - institution: "ГУАП"
-        area: "Информатика и вычислительная техника (09.03.01)"
-        degree: "Бак."
-        start_date: "2023-09"
-        end_date: "2027-06"
+    "Обо мне":
+      - "Python-разработчик в AI/LLM: RAG-платформы, self-hosted инференс, обработка персональных данных, автоматизация процессов."
+      - "Коммерческий опыт в Nexign (AI Group) — от пайплайна индексации и семантического поиска по корпоративной документации до сервиса анонимизации документов перед передачей в LLM."
+      - "Системная база (C, ASM, Linux): понимание архитектуры ОС и низкоуровневых механизмов."
+    "Опыт работы":
+      - company: "Nexign"
+        position: "Инженер-программист (Стажировка)"
+        start_date: "2026-04"
+        end_date: "2026-09"
         location: "Санкт-Петербург"
         highlights:
-          - "Участие в учебных практиках с разработкой внутренних инструментов для автоматизации."
-    Опыт_работы:
+          - "Реализовал основную часть пайплайна индексации и семантического поиска по корпоративной документации (RAG): Qdrant и pgvector как векторные хранилища, self-hosted инференс на vLLM и Triton, собственный пайплайн без тяжёлых фреймворков."
+          - "Разработал сервис обратимой анонимизации документов перед передачей в LLM: регулярные выражения и типовые валидаторы (телефон, СНИЛС, ИНН, номера карт), подстановка токенов-заглушек и корректный демаскинг в ответе модели."
+          - "Перенёс генерацию тест-кейсов (ПМИ) с Python/LangChain-скриптов на полностью автоматизированный процесс в n8n — параллельная генерация, контроль покрытия, двухуровневая гарантия доставки данных. Ускорил подготовку ПМИ на ~60%, на новый процесс перевёл весь отдел."
+          - "Исправил критичные баги в сервисе распознавания речи (обвязка над внешней ASR-моделью): некорректная работа со словарями и ошибки распознавания отдельных слов."
+          - "Написал smoke- и unit-тесты для всех сервисов команды — проверка работоспособности и отказоустойчивости."
       - company: "FutureToday"
         position: "Python-разработчик (Практика)"
         start_date: "2025-02"
@@ -32,6 +34,16 @@ cv:
           - "Разрабатывал и оптимизировал функционал приложения для поиска стажировок с использованием нейросетевой фильтрации."
           - "Проводил рефакторинг legacy-кода и адаптацию алгоритмов обработки данных из Excel-таблиц."
           - "Выявлял и устранял баги в модулях сбора данных из социальных сетей."
+    Образование:
+      - institution: "ГУАП"
+        area: "Информатика и вычислительная техника (09.03.01)"
+        degree: "Бак."
+        start_date: "2023-09"
+        end_date: "2027-06"
+        location: "Санкт-Петербург"
+        highlights:
+          - "Участие в учебных практиках с разработкой внутренних инструментов для автоматизации."
+          - "Написание научных статей на тему использования нейросетей в разработке."
     Проекты:
       - name: "[SUAI Deadline Bot](https://github.com/n1xsi/suai-deadline-bot)"
         date:
@@ -57,55 +69,59 @@ cv:
         summary: "Desktop-приложение для расчёта оптимального времени сна."
         highlights:
           - "Использовал PyQt5 для создания интуитивно понятного и удобного графического интерфейса."
-    Навыки_&_инструменты:
+    "Навыки и инструменты":
       - label: "Языки программирования"
-        details: "Python (Advanced), C, C++, GAS Assembler x64, SQL, Bash"
-      - label: "Технологии и инструменты"
-        details: "Git, Docker, SQLAlchemy/SQLite, Alembic, FastAPI (базово), Unittest, Make, Markdown"
-      - label: "Окружение"
-        details: "VS Code, WSL Debian, Neovim"
+        details: "Python, C, C++, Java, Assembler, SQL, Bash"
+      - label: "Бэкенд и инфраструктура"
+        details: "FastAPI, SQLAlchemy / SQLite, Alembic, PostgreSQL, Docker, n8n, Git, Make"
+      - label: "Тестирование"
+        details: "PyTest, smoke-тестирование, тестирование API (Swagger / Postman), проверка отказоустойчивости"
       - label: "Языки"
         details: "Русский (родной), Английский (B2 - Upper-Intermediate)"
-    Дополнительная_информация:
+    "Дополнительная информация":
       - bullet: "Soft Skills — Был капитаном киберспортивной команды (LAN-турниры), отвечал за стратегию, коммуникацию, поддержку и управление командой в стрессовых ситуациях. Участвовал в вузовских хакатонах (разработка игровых прототипов на C# и Unity)."
       - bullet: "Hard Skills — Призёр школьных олимпиад по программированию (областной уровень). Регулярно решаю алгоритмические задачи на [CodeWars](https://www.codewars.com/users/nixsi), вхожу в топ-12% мирового рейтинга (Rank: 4 kyu)."
-      - bullet: "Помимо Python, имею академическую базу по C/C++ и Assembly. Примеры реализации алгоритмов и лабораторных работ, демонстрирующие работу с памятью и алгоритмами, доступны в моем [GitHub](https://github.com/n1xsi)."
 design:
-  theme: "classic"
+  theme: classic
   page:
-    size: "a4"
-    top_margin: "1.5cm"
-    bottom_margin: "1.5cm"
-    left_margin: "1.5cm"
-    right_margin: "1.5cm"
-    show_page_numbering: false
+    size: a4
+    top_margin: 1.5cm
+    bottom_margin: 1.5cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_footer: false
+    show_top_note: false
   colors:
-    name: "rgb(120,81,169)"
-    section_titles: "rgb(120,81,169)"
-    links: "rgb(120,81,169)"
-    connections: "rgb(120,81,169)"
-  text:
-    font_family: "Source Sans 3"
-    font_size: "10pt"
-    alignment: "justified"
+    name: rgb(120,81,169)
+    section_titles: rgb(120,81,169)
+    links: rgb(120,81,169)
+    connections: rgb(120,81,169)
+  typography:
+    alignment: justified
+    font_family:
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+    font_size:
+      body: 10pt
+    bold:
+      name: true
+  links:
+    show_external_link_icon: true
   header:
-    name_bold: true
-    alignment: "center"
+    alignment: center
+    connections:
+      phone_number_format: national
   section_titles:
-    type: "with-partial-line"
+    type: with_partial_line
+  sections:
+    show_time_spans_in: []
 locale:
-  language: "ru"
-  phone_number_format: "national"
-  page_numbering_template: "NAME - Page PAGE_NUMBER of TOTAL_PAGES"
-  last_updated_date_template: " "
-  date_template: "MONTH_ABBREVIATION YEAR"
-  month: "month"
-  months: "months"
-  year: "year"
-  years: "years"
+  language: russian
   present: "сейчас"
-  to: "–"
-  abbreviations_for_months:
+  month_abbreviations:
     - "Янв"
     - "Февр"
     - "Март"
@@ -118,7 +134,7 @@ locale:
     - "Окт"
     - "Ноя"
     - "Дек"
-  full_names_of_months:
+  month_names:
     - "Январь"
     - "Февраль"
     - "Март"
@@ -130,8 +146,7 @@ locale:
     - "Сентябрь"
     - "Октябрь"
     - "Ноябрь"
-    - "Декарбь"
-rendercv_settings:
-  date: "2026-01-23"
+    - "Декабрь"
+settings:
+  current_date: "2026-08-24"
   bold_keywords: []
-  sort_entries: "none"
