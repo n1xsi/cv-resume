@@ -36,8 +36,7 @@ cv:
         start_date: "2023-09"
         end_date: "2027-06"
         highlights:
-          - "Дипломная работа связана с применением LLM/RAG-систем."
-          - "Написание научных статей на тему использования нейросетей в разработке."
+          - "Написание диплома и научных статей на тему использования нейросетей в разработке."
     Проекты:
       - name: "[RAG Document Assistant](https://github.com/n1xsi/rag-document-assistant)"
         summary: "AI-ассистент для семантического поиска и QA по пользовательским документам."
@@ -56,13 +55,13 @@ cv:
           - "Разработал собственный LCG-алгоритм генерации с точностью до наносекунд (кучность распределения на 173% выше встроенного модуля random). Настроил CI/CD для автопубликации пакета в PyPI, 100% test coverage."
     "Навыки и инструменты":
       - label: "Языки программирования"
-        details: "Python, C/C++, Assembler, Bash"
+        details: "Python, SQL, Bash, C/C++, Assembler"
       - label: "Бэкенд и инфраструктура"
-        details: "FastAPI, PostgreSQL, SQLAlchemy/SQLite, Alembic, Docker, Github Actions, Git"
+        details: "FastAPI, PostgreSQL, SQLAlchemy/SQLite, Alembic, Docker, CI/CD (GitHub Actions, Jenkins), Linux, Git, Jira & Confluence"
       - label: "AI/ML"
-        details: "LLM, RAG, VectorDB (Qdrant, pgvector), n8n, OpenAI API, PyTorch, TensorFlow"
+        details: "LLM, RAG, VectorDB (Qdrant, pgvector), n8n, OpenAI API, NumPy, TensorFlow"
       - label: "Тестирование"
-        details: "PyTest, smoke-тестирование, тестирование API (Swagger/Postman), проверка отказоустойчивости"
+        details: "PyTest, Unit/smoke-тестирование, тестирование API (Swagger/Postman)"
       - label: "Языки"
         details: "Русский (родной), Английский (B2 - Upper-Intermediate)"
 design:
