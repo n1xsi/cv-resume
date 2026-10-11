@@ -1,7 +1,8 @@
 cv:
   name: "Иван Лебедев"
+  headline: "Python-разработчик — AI/LLM Engineer, Backend"
   location: "Санкт-Петербург"
-  phone: "+7-910-856-43-23"
+  phone: "+79108564323"
   email: "vanyalebedev45@gmail.com"
   social_networks:
     - network: "Telegram"
@@ -10,25 +11,26 @@ cv:
       username: "n1xsi"
   sections:
     "Обо мне":
-      - "Python-разработчик с упором на AI/Backend (RAG, LLM-инференс, автоматизация). Имею коммерческий опыт работы с векторными БД, оркестрацией пайплайнов (n8n) и написанием стабильного асинхронного кода."
-      - "Понимаю внутреннюю архитектуру систем (C/C++, ASM, Linux). В свободное время решаю алгоритмы на CodeWars (Rank: 4 kyu — топ-12% мира)."
+      - "Python-разработчик с упором на AI/Backend (RAG, LLM-инференс, автоматизация). Имею коммерческий опыт работы с векторными БД, оркестрацией пайплайнов (n8n) и написанием стабильного кода."
+      - "Пишу асинхронные сервисы на Python (FastAPI, asyncio, SQLAlchemy 2.0, PostgreSQL), упаковываю в Docker, довожу до продакшена через CI/CD. Понимаю системный уровень (C/C++, Assembler, Linux). Студент 4 курса ГУАП, **готов к полной занятости**."
     "Опыт работы":
       - company: "Nexign"
-        position: "Python-разработчик (AI-Group)"
+        position: "Python-разработчик, AI-Group (Стажировка)"
         start_date: "2026-04"
         end_date: "2026-09"
         highlights:
-          - "Разработал RAG-пайплайн для семантического поиска по корпоративной базе (Qdrant, pgvector). Настроил self-hosted инференс LLM через vLLM и Triton."
-          - "Реализовал сервис обратимой анонимизации документов перед передачей в LLM: регулярные выражения и типовые валидаторы (телефон, СНИЛС, ИНН, номера карт) и корректный демаскинг в ответе модели."
-          - "Автоматизировал генерацию ПМИ: перевёл пайплайн с LangChain-скриптов на n8n. Ускорил подготовку тестов на 60% и масштабировал решение на весь отдел."
-          - "Исправлял критичные баги в сервисе распознавания речи (обвязка над внешней ASR-моделью) и покрыл smoke/unit тестами 80% функционала."
+          - "Разработал RAG-пайплайн поиска по корпоративной базе: чанкинг, эмбеддинги, векторный поиск в Qdrant и pgvector, ранжирование. FastAPI-сервис в Docker."
+          - "Реализовал сервис обратимой анонимизации персональных данных перед отправкой в LLM: детекция телефонов, СНИЛС, ИНН, номеров карт через регулярные выражения и контрольные суммы, подстановка токенов и демаскинг в ответе модели."
+          - "Автоматизировал генерацию ПМИ: перевёл пайплайн с LangChain-скриптов на n8n. Ускорил подготовку тестов на ~60% и масштабировал решение на весь отдел."
+          - "Развернул self-hosted инференс LLM на vLLM и NVIDIA Triton: заменили внешний API, данные перестали покидать периметр компании."
+          - "Стабилизировал сервис распознавания речи (обвязка над внешней ASR-моделью): закрыл десятки критичных багов, поднял покрытие тестами с 20% до 80% (pytest, unit и smoke)."
       - company: "FutureToday"
         position: "Python-разработчик (Практика)"
         start_date: "2025-02"
         end_date: "2025-05"
         highlights:
-          - "Разработка функционала поиска стажировок (нейросетевая фильтрация) и оптимизация алгоритмов обработки Excel-данных."
-          - "Перевёл часть телеграм-ботов для мероприятий с конструкторов на Python (aiogram)."
+          - "Разработка функционала поиска стажировок с нейросетевой фильтрацией вакансий. Ускорил обработку Excel-выгрузок в ~2 раза за счёт оптимизации алгоритмов."
+          - "Перевёл часть Telegram-ботов для мероприятий с no-code конструкторов на собственную реализацию (Python, aiogram)."
     Образование:
       - institution: "ГУАП"
         area: "Информатика и вычислительная техника (09.03.01)"
@@ -36,46 +38,51 @@ cv:
         start_date: "2023-09"
         end_date: "2027-06"
         highlights:
-          - "Написание диплома и научных статей на тему использования нейросетей в разработке."
+          - "Диплом и научные статьи по применению нейросетей в разработке ПО. Профильное: алгоритмы и структуры данных, базы данных, ОС, системное программирование."
     Проекты:
       - name: "[RAG Document Assistant](https://github.com/n1xsi/rag-document-assistant)"
-        summary: "AI-ассистент для семантического поиска и QA по пользовательским документам."
+        summary: "AI-ассистент для семантического поиска и вопросно-ответной работы по документам пользователя."
         highlights:
           - "**Стек** — Python, Sentence-Transformers, NumPy, PyPdf."
-          - "Реализовал пайплайн с кросс-языковым векторным поиском и защитой от галлюцинаций (динамический порог релевантности). Проект был успешно защищён как тестовое задание в ИТ-хаб «Северстали»."
+          - "Реализовал кросс-языковой векторный поиск и защиту от галлюцинаций через динамический порог релевантности. Защищён как тестовое задание в ИТ-хаб «Северстали»."
       - name: "[SUAI Deadline Bot](https://github.com/n1xsi/suai-deadline-bot)"
-        summary: "Асинхронный Telegram-бот для автоматизации отслеживания дедлайнов в ЛК ГУАП."
+        summary: "Асинхронный Telegram-бот для отслеживания дедлайнов в ЛК ГУАП; 100+ активных студентов ежедневно."
         highlights:
-          - "**Стек** — Python, Aiogram 3.x, SQLAlchemy 2.0 (async), Alembic, Docker."
-          - "С нуля спроектировал БД и фоновый парсинг. Настроил полный цикл CI/CD (сборка в GHCR и автоматический деплой на продакшн-сервер). Ботом ежедневно пользуется 100+ студентов."
+          - "**Стек** — Python, asyncio, Aiogram 3.x, SQLAlchemy 2.0 (async), Alembic, Docker."
+          - "Спроектировал схему БД и фоновый парсинг с обработкой отказов внешнего сервиса. Настроил CI/CD: тесты, сборка образа в GHCR, автодеплой на продакшен-сервер."
       - name: "[PyCustomRand](https://github.com/n1xsi/PyCustomRand)"
-        summary: "Open-source библиотека для генерации чисел на базе системного времени."
+        summary: "Open-source библиотека в PyPI: генератор псевдослучайных чисел (LCG) с посевом от системного времени."
         highlights:
           - "**Стек** — Python, Pytest, GitHub Actions, PyPI."
           - "Разработал собственный LCG-алгоритм генерации с точностью до наносекунд (кучность распределения на 173% выше встроенного модуля random). Настроил CI/CD для автопубликации пакета в PyPI, 100% test coverage."
     "Навыки и инструменты":
       - label: "Языки программирования"
         details: "Python, SQL, Bash, C/C++, Assembler"
-      - label: "Бэкенд и инфраструктура"
-        details: "FastAPI, PostgreSQL, SQLAlchemy/SQLite, Alembic, Docker, CI/CD (GitHub Actions, Jenkins), Linux, Git, Jira & Confluence"
-      - label: "AI/ML"
-        details: "LLM, RAG, VectorDB (Qdrant, pgvector), n8n, OpenAI API, NumPy, TensorFlow"
+      - label: "Бэкенд"
+        details: "FastAPI, asyncio, Pydantic, SQLAlchemy 2.0 (async), Alembic, PostgreSQL, SQLite, REST API, Swagger/OpenAPI"
+      - label: "AI/LLM"
+        details: "RAG, промпт-инжиниринг, эмбеддинги, чанкинг, векторные БД (Qdrant, pgvector), self-hosted инференс (vLLM, Triton), LangChain, n8n, OpenAI API, Sentence-Transformers, NumPy"
+      - label: "Инфраструктура"
+        details: "Docker, Docker Compose, Linux, Git, CI/CD (GitHub Actions, Jenkins), Jira, Confluence"
       - label: "Тестирование"
-        details: "PyTest, Unit/smoke-тестирование, тестирование API (Swagger/Postman)"
+        details: "PyTest, unit- и smoke-тесты, тестирование API (Postman, Swagger)"
+      - label: "Базовый уровень"
+        details: "PyTorch, Hugging Face, Kubernetes, Nginx, Prometheus/Grafana"
       - label: "Языки"
-        details: "Русский (родной), Английский (B2 - Upper-Intermediate)"
+        details: "Русский — родной, Английский — B2 (Upper-Intermediate)"
 design:
   theme: classic
   page:
     size: a4
-    top_margin: 1.5cm
-    bottom_margin: 1.5cm
-    left_margin: 1.5cm
-    right_margin: 1.5cm
+    top_margin: 1.0cm
+    bottom_margin: 1.0cm
+    left_margin: 1.1cm
+    right_margin: 1.1cm
     show_footer: false
     show_top_note: false
   colors:
     name: rgb(120,81,169)
+    headline: rgb(120,81,169)
     section_titles: rgb(120,81,169)
     links: rgb(120,81,169)
     connections: rgb(120,81,169)
@@ -88,7 +95,7 @@ design:
       connections: Source Sans 3
       section_titles: Source Sans 3
     font_size:
-      body: 10pt
+      body: 9pt
     bold:
       name: true
   links:
@@ -96,7 +103,8 @@ design:
   header:
     alignment: center
     connections:
-      phone_number_format: national
+      phone_number_format: international
+      display_urls_instead_of_usernames: true
   section_titles:
     type: with_partial_line
   sections:
@@ -140,5 +148,4 @@ locale:
     - "Ноябрь"
     - "Декабрь"
 settings:
-  current_date: "2026-08-24"
   bold_keywords: []
