@@ -15,7 +15,7 @@ cv:
       - "Пишу асинхронные сервисы на Python (FastAPI, asyncio, SQLAlchemy 2.0, PostgreSQL), упаковываю в Docker, довожу до продакшена через CI/CD. Понимаю системный уровень (C/C++, Assembler, Linux). Студент 4 курса ГУАП, **готов к полной занятости**."
     "Опыт работы":
       - company: "Nexign"
-        position: "Python-разработчик, AI-Group (Стажировка)"
+        position: "Python-разработчик, AI-Group (Срочный контракт)"
         start_date: "2026-04"
         end_date: "2026-09"
         highlights:
