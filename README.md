@@ -12,3 +12,11 @@ For more info just check my [profile](https://github.com/n1xsi) :octocat:.
 **c/c++ dev**:
 * [source_c.typ](source_c.typ) — c/c++ cv-resume for typst editor [typst](https://typst.app/)
 * [main_c.pdf](main_c.pdf) — is rendered c/c++ cv-resume file
+
+## basic ats check (keywords)
+
+```
+rendercv render ./source.yaml
+python check_ats.py
+```
+
