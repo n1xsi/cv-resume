@@ -1,0 +1,134 @@
+cv:
+  name: "Иван Лебедев"
+  headline: "C/C++ Developer | System Software Engineer"
+  location: "Санкт-Петербург"
+  phone: "+79108564323"
+  email: "vanyalebedev45@gmail.com"
+  social_networks:
+    - network: "Telegram"
+      username: "n1xs1"
+    - network: "GitHub"
+      username: "n1xsi"
+  sections:
+    "Обо мне":
+      - "Инженер-программист (C/C++, Python) с 10 месяцами коммерческой разработки в enterprise-сегменте (Nexign, FutureToday). Специализируюсь на системной разработке, алгоритмах и высоконагруженных сервисах."
+      - "Имею сильную базу: понимаю архитектуру ЭВМ, работу памяти, пишу на C и Assembler. В коммерческих задачах разворачивал production-решения с требованиями к latency в Linux-среде, выстраивал CI/CD и писал стабильный код (покрытие тестами 80-100%)."
+      - "Ищу роль C/C++ разработчика (готов активно работать с фреймворком **Qt**). Студент 4 курса ГУАП, **готов к полной занятости**."
+    "Опыт работы":
+      - company: "Nexign"
+        position: "Инженер-программист, AI-Group (Срочный контракт, команда 8 чел.)"
+        start_date: "2026-04"
+        end_date: "2026-09"
+        highlights:
+          - "Развернул и оптимизировал высоконагруженный инференс-сервер (NVIDIA Triton, vLLM) на 2×A100. Настроил continuous batching, аллокацию памяти и health-checks, обеспечив пропускную способность 500+ токенов/с."
+          - "Проектировал production-сервисы в Docker с жесткими требованиями к производительности: оптимизировал пайплайны обработки данных, добившись стабильной задержки p95 — 190 мс при высоких нагрузках."
+          - "Разработал систему обратимой анонимизации (152-ФЗ), используя регулярные выражения, контрольные суммы и побитовые маски для обработки потока данных перед отправкой в закрытый контур."
+          - "Внедрил инженерные практики в отделе: перевел часть процессов на автоматизированные пайплайны, поднял покрытие критически важных сервисов тестами с 20% до 80% (unit, smoke)."
+      - company: "FutureToday"
+        position: "Backend-разработчик (Производственная практика, команда 3 чел.)"
+        start_date: "2025-02"
+        end_date: "2025-05"
+        highlights:
+          - "Ускорил обработку больших массивов данных (файлы по 30+ тыс. строк) в 2 раза за счёт перехода на векторизованные операции (NumPy/pandas, использующие под капотом C-API)."
+          - "Спроектировал асинхронную логику внутренних сервисов, убрал зависимость от сторонних API, связав обработку данных напрямую с внутренней реляционной БД."
+    Образование:
+      - institution: "ГУАП"
+        area: "Информатика и вычислительная техника (09.03.01)"
+        degree: "Бак."
+        start_date: "2023-09"
+        end_date: "2027-06"
+        highlights:
+          - "Профильные дисциплины: алгоритмы и структуры данных, операционные системы, архитектура ЭВМ, системное программирование."
+    Проекты:
+      - name: "[3D Polyhedron Rasterizer](https://github.com/n1xsi/3d-polyhedron-rasterizer)"
+        summary: "Собственный 3D-движок с полным циклом рендеринга без использования OpenGL/DirectX."
+        highlights:
+          - "**Стек** — C++, WinAPI, GDI+."
+          - "Написал математику аффинных преобразований (матрицы переноса, вращения). Реализовал отсечение невидимых граней (Back-face culling) и алгоритм закраски полигонов (Scan-line rasterization)."
+          - "Проект демонстрирует понимание работы с памятью и оптимизации низкоуровневых алгоритмов компьютерной графики."
+      - name: "[RLE Compressor](https://github.com/n1xsi/rle-compressor)"
+        summary: "Кроссплатформенная консольная утилита для сжатия файлов и директорий."
+        highlights:
+          - "**Стек** — C, File I/O, POSIX."
+          - "Реализовал алгоритм Run-Length Encoding (RLE). Спроектировал бинарный формат контейнера для упаковки директорий."
+          - "Оптимизировал потоковое чтение/запись байтов и ручное выделение памяти (malloc/free), предотвратив утечки."
+      - name: "[x86-64 Assembly Labs](https://github.com/n1xsi/assembly-x64-labs)"
+        summary: "Сборник низкоуровневых программ для демонстрации работы с процессором."
+        highlights:
+          - "**Стек** — GAS ASM, Linux, Makefile"
+          - "Реализовал сложные вычисления (включая сопроцессор FPU), поразрядную обработку данных и косвенную адресацию. Интегрировал системные вызовы Linux и функции библиотеки `libc`."
+    "Навыки и инструменты":
+      - label: "Языки программирования"
+        details: "C, C++, Python, Assembler (x86-64), Bash, SQL"
+      - label: "Системная разработка"
+        details: "Linux (Kali/WSL), POSIX, Управление памятью, Многопоточность/Асинхронность, Алгоритмы и структуры данных"
+      - label: "Инфраструктура"
+        details: "CMake, Make, Docker, Git, CI/CD (GitHub Actions), GDB, IDA x64, Neovim"
+      - label: "Базовый уровень"
+        details: "Qt, NVIDIA Triton, PostgreSQL, REST API"
+      - label: "Языки"
+        details: "Русский — родной, Английский — B2 (Upper-Intermediate)"
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 1.0cm
+    bottom_margin: 1.0cm
+    left_margin: 1.1cm
+    right_margin: 1.1cm
+    show_footer: false
+    show_top_note: false
+  colors:
+    name: rgb(0,79,144)
+    headline: rgb(0,79,144)
+    section_titles: rgb(0,79,144)
+    links: rgb(0,79,144)
+    connections: rgb(0,79,144)
+  typography:
+    alignment: justified-with-no-hyphenation
+    font_family:
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+    font_size:
+      body: 9pt
+    bold:
+      name: true
+  links:
+    show_external_link_icon: true
+  header:
+    alignment: center
+    connections:
+      phone_number_format: international
+      display_urls_instead_of_usernames: true
+  section_titles:
+    type: with_partial_line
+  sections:
+    show_time_spans_in: []
+  entries:
+    short_second_row: false
+  templates:
+    experience_entry:
+      date_and_location_column: |-
+        *DATE*
+    education_entry:
+      date_and_location_column: |-
+        *DATE*
+locale:
+  language: russian
+  present: "сейчас"
+  month_abbreviations:
+    - "Янв"
+    - "Февр"
+    - "Март"
+    - "Апр"
+    - "Май"
+    - "Июнь"
+    - "Июль"
+    - "Авг"
+    - "Сент"
+    - "Окт"
+    - "Ноя"
+    - "Дек"
